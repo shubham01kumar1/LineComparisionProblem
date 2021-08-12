@@ -9,11 +9,13 @@ public class LineComparision {
         l2.input();
         String line1=String.valueOf(l1.length(l1.x,l1.y));
         String line2 =String.valueOf(l2.length(l2.x,l2.y));
-        if(line1.equals(line2))
+        int compare=line1.compareTo(line2);
+        if(compare==0)
             System.out.println("Length of both lines are equal and is "+line1);
+        else if(compare>0)
+            System.out.println("length of first line is greater");
         else
-            System.out.println("Lenth of both lines are not equal");
-
+            System.out.println("Length of second line is greater");
     }
 }
 class Line {

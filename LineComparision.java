@@ -13,7 +13,6 @@ public class LineComparision {
         double len = Math.sqrt(Math.pow((this.x - 0), 2) + Math.pow((this.y - 0), 2));
         return len;
     }
-
     public static void main(String[] args) {
         System.out.println("*******Enter the coordinate of end-points of first line********");
         LineComparision l1=new LineComparision();
